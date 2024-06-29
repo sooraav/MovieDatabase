@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Movie: Codable, Identifiable {
+struct Movie: Codable, Identifiable, Hashable {
     
     let id = UUID()
     let title: String
@@ -65,10 +65,14 @@ struct Movie: Codable, Identifiable {
         case response = "Response"
     }
     
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 // Rating model
-struct Rating: Codable {
+struct Rating: Codable, Hashable {
+    
     let source: String
     let value: String
 

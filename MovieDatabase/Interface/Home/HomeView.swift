@@ -22,11 +22,13 @@ struct HomeView: View {
                                 DisclosureGroup {
                                     
                                     ForEach(subCategory.movies) { movie in
-                                        MovieCellView(title: movie.title,
-                                                      language: movie.language,
-                                                      imageUrl: movie.poster ?? "",
-                                                      year: movie.year)
+                                        NavigationLink(value: movie) { MovieCellView(title: movie.title,
+                                                                                     language: movie.language,
+                                                                                     imageUrl: movie.poster ?? "",
+                                                                                     year: movie.year)
+                                        }
                                     }
+                                        
                                 } label: {
                                     Text( subCategory.item)
                                 }
@@ -41,12 +43,17 @@ struct HomeView: View {
                     
                     List(viewModel.searchResuls) { movie in
                         
-                        MovieCellView(title: movie.title,
-                                      language: movie.language,
-                                      imageUrl: movie.poster ?? "",
-                                      year: movie.year)
+                        NavigationLink(value: movie) { MovieCellView(title: movie.title,
+                                                                     language: movie.language,
+                                                                     imageUrl: movie.poster ?? "",
+                                                                     year: movie.year)
+                        }
                     }
                 }
+            }
+            .navigationDestination(for: Movie.self) { movie in
+                
+                MovieDetailView()
             }
             .navigationTitle("Movies")
             .searchable(text: $viewModel.searchText)
