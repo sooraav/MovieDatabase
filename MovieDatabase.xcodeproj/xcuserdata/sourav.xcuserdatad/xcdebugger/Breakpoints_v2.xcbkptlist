@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F2E6C827-49A6-4D07-9C68-CAD91838C043"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CBBE665D-AE90-460D-8E32-5B2FFE841505"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDatabase/Interface/Home/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CBBE665D-AE90-460D-8E32-5B2FFE841505 - 52803ef59181ea7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieDatabase.HomeViewModel.getData() -&gt; ()"
+                  moduleName = "MovieDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sourav/Documents/Xcode/MovieDatabase/MovieDatabase/Interface/Home/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "CBBE665D-AE90-460D-8E32-5B2FFE841505 - 52803ef59181ea7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieDatabase.HomeViewModel.getData() -&gt; ()"
+                  moduleName = "MovieDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sourav/Documents/Xcode/MovieDatabase/MovieDatabase/Interface/Home/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "CBBE665D-AE90-460D-8E32-5B2FFE841505 - 52803ef59181ea7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieDatabase.HomeViewModel.getData() -&gt; ()"
+                  moduleName = "MovieDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sourav/Documents/Xcode/MovieDatabase/MovieDatabase/Interface/Home/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "324">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A2933C4-204B-43CB-B354-B1A7FFA82049"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDatabase/Interface/Home/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "getData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
