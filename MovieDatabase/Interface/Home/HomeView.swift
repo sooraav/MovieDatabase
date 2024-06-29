@@ -22,7 +22,10 @@ struct HomeView: View {
                                 DisclosureGroup {
                                     
                                     ForEach(subCategory.movies) { movie in
-                                        Text(movie.title)
+                                        MovieCellView(title: movie.title,
+                                                      language: movie.language,
+                                                      imageUrl: movie.poster ?? "",
+                                                      year: movie.year)
                                     }
                                 } label: {
                                     Text( subCategory.item)
@@ -38,7 +41,10 @@ struct HomeView: View {
                     
                     List(viewModel.searchResuls) { movie in
                         
-                        Text(movie.title)
+                        MovieCellView(title: movie.title,
+                                      language: movie.language,
+                                      imageUrl: movie.poster ?? "",
+                                      year: movie.year)
                     }
                 }
             }
