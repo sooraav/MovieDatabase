@@ -23,7 +23,7 @@ import SwiftUI
             
             return movies.filter {
                 
-                $0.title.contains(searchText) || $0.genre.contains(searchText) || $0.year.contains(searchText) || $0.actors.contains(searchText) || $0.director.contains(searchText)
+                $0.title.lowercased().contains(searchText.lowercased()) || $0.genre.lowercased().contains(searchText.lowercased()) || $0.year.contains(searchText) || $0.actors.lowercased().contains(searchText.lowercased()) || $0.director.lowercased().contains(searchText.lowercased())
             }
         }
     }

@@ -53,7 +53,7 @@ struct HomeView: View {
             }
             .navigationDestination(for: Movie.self) { movie in
                 
-                MovieDetailView()
+                MovieDetailView(model: MovieDetailViewModel(movie: movie))
             }
             .navigationTitle("Movies")
             .searchable(text: $viewModel.searchText)
