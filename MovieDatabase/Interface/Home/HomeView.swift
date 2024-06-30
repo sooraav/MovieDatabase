@@ -15,50 +15,10 @@ struct HomeView: View {
         NavigationStack {
             VStack {
                 if viewModel.searchText.isEmpty {
-                    List(viewModel.categories, id: \.type) { row in
-                        
-                        DisclosureGroup {
-                            if row.type == .allMovies, let movies =  row.subCategories.first?.movies {
-                                
-                                ForEach(movies) { movie in
-                                    NavigationLink(value: movie) { MovieCellView(title: movie.title,
-                                                                                 language: movie.language,
-                                                                                 imageUrl: movie.poster ?? "",
-                                                                                 year: movie.year)
-                                    }
-                                }
-                            }
-                            ForEach(row.subCategories) { subCategory in
-                                
-                                DisclosureGroup {
-                                    
-                                    ForEach(subCategory.movies) { movie in
-                                        NavigationLink(value: movie) { MovieCellView(title: movie.title,
-                                                                                     language: movie.language,
-                                                                                     imageUrl: movie.poster ?? "",
-                                                                                     year: movie.year)
-                                        }
-                                    }
-                                        
-                                } label: {
-                                    Text( subCategory.item)
-                                }
-                                
-                            }
-                        } label: {
-                            Text(row.type.rawValue)
-                        }
-                        
-                    }
+                    CategoryListView(categories: viewModel.categories)
                 } else {
-                    
-                    List(viewModel.searchResuls) { movie in
-                        
-                        NavigationLink(value: movie) { MovieCellView(title: movie.title,
-                                                                     language: movie.language,
-                                                                     imageUrl: movie.poster ?? "",
-                                                                     year: movie.year)
-                        }
+                    List {
+                        MovieListView(movies: viewModel.searchResuls)
                     }
                 }
             }

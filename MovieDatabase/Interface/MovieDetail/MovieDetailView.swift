@@ -12,71 +12,71 @@ struct MovieDetailView: View {
     @Bindable var model: MovieDetailViewModel
     var body: some View {
         ScrollView {
-                   VStack( spacing: 16) {
-                       AsyncImage(url: URL(string: model.movie.poster ?? "")) { image in
-                           image
-                               .resizable()
-                               .aspectRatio(contentMode: .fit)
-                               .cornerRadius(10)
-                       } placeholder: {
-                           ProgressView()
-                       }
-                       .frame(height: 300)
-                       .padding()
-
-                       VStack(spacing: 8) {
-                           VStack(alignment: .center) {
-                               Text(model.movie.title)
-                                   .font(.title)
-                                   .bold()
-                                   .multilineTextAlignment(.leading)
-                               
-                               Text(model.movie.plot)
-                                   .font(.body)
-                                   .multilineTextAlignment(.leading)
-                           }
-
-                           Divider()
-                           HStack {
-                               VStack(alignment: .leading) {
-                                   Text("Actors: \(model.movie.actors)")
-                                       .font(.body)
-                                       .multilineTextAlignment(.leading)
-                                   
-                                   Text("Director: \(model.movie.director)")
-                                       .font(.body)
-                                       .multilineTextAlignment(.leading)
-                                   
-                                   Text("Writer: \(model.movie.writer)")
-                                       .font(.body)
-                                       .multilineTextAlignment(.leading)
-                                   
-                                   Text("Release Date: \(model.movie.released)")
-                                       .font(.body)
-                                       .multilineTextAlignment(.leading)
-                               }
-                               Spacer()
-                           }
-                           
-                           
-                           Divider()
-                            Text("Ratings")
-                               .font(.headline)
-                           Picker("Rating source", selection: $model.selectedRating) {
-                               ForEach(model.movie.ratings, id: \.source) { rating in
-                                   Text(rating.source).tag(rating)
-                               }
-                           }
-                           
-                           Text("Rating: \(model.selectedRating.value)")
-                               .font(.body)
-                               .padding(.top, 8)
-                       }
-                       .padding(.horizontal)
-                   }
-                   .navigationBarTitle(Text(model.movie.title), displayMode: .inline)
-               }
-           }
+            VStack( spacing: 16) {
+                AsyncImage(url: URL(string: model.movie.poster ?? "")) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(10)
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(height: 300)
+                .padding()
+                
+                VStack(spacing: 8) {
+                    VStack(alignment: .center) {
+                        Text(model.movie.title)
+                            .font(.title)
+                            .bold()
+                            .multilineTextAlignment(.leading)
+                        
+                        Text(model.movie.plot)
+                            .font(.body)
+                            .multilineTextAlignment(.leading)
+                    }
+                    
+                    Divider()
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Actors: \(model.movie.actors)")
+                                .font(.body)
+                                .multilineTextAlignment(.leading)
+                            
+                            Text("Director: \(model.movie.director)")
+                                .font(.body)
+                                .multilineTextAlignment(.leading)
+                            
+                            Text("Writer: \(model.movie.writer)")
+                                .font(.body)
+                                .multilineTextAlignment(.leading)
+                            
+                            Text("Release Date: \(model.movie.released)")
+                                .font(.body)
+                                .multilineTextAlignment(.leading)
+                        }
+                        Spacer()
+                    }
+                    
+                    
+                    Divider()
+                    Text("Ratings")
+                        .font(.headline)
+                    Picker("Rating source", selection: $model.selectedRating) {
+                        ForEach(model.movie.ratings, id: \.source) { rating in
+                            Text(rating.source).tag(rating)
+                        }
+                    }
+                    
+                    Text("Rating: \(model.selectedRating.value)")
+                        .font(.body)
+                        .padding(.top, 8)
+                }
+                .padding(.horizontal)
+            }
+            .navigationBarTitle(Text(model.movie.title), displayMode: .inline)
+        }
+    }
 }
 
 #Preview {
