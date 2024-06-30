@@ -10,7 +10,7 @@ import SwiftUI
 struct MovieCellView: View {
     let title: String
     let language: String
-    let imageUrl: String
+    let imageUrl: String?
     let year: String
     var body: some View {
         

@@ -8,27 +8,29 @@
 import SwiftUI
 
 struct AsyncImageView: View {
-    let imageUrl: String
+    let imageUrl: String?
     var body: some View {
-        AsyncImage(url: URL(string: imageUrl)) { phase in
-                    switch phase {
-                    case .success(let image):
-                        image
-                            .resizable()
-                    case .failure(_):
-                        Image(systemName: "exclamationmark.triangle")
-                            .resizable()
-                            .foregroundColor(.red)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(height: 30)
-                    case .empty:
-                        ProgressView()
-                    @unknown default:
-                        Image(systemName: "exclamationmark.triangle")
-                            .resizable()
-                            .foregroundColor(.red)
-                    }
+        if let imageUrl {
+            AsyncImage(url: URL(string: imageUrl)) { phase in
+                switch phase {
+                case .success(let image):
+                    image
+                        .resizable()
+                case .failure(_):
+                    Image("ImagePlaceholder")
+                        .resizable()
+                case .empty:
+                    ProgressView()
+                @unknown default:
+                    Image(systemName: "exclamationmark.triangle")
+                        .resizable()
+                        .foregroundColor(.red)
                 }
+            }
+        } else {
+            Image("ImagePlaceholder")
+                .resizable()
+        }
     }
 }
 

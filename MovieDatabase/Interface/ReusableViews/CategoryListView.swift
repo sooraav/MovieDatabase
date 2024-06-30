@@ -26,6 +26,6 @@ struct CategoryListView: View {
         }
     }
 
-/*#Preview {
-    CategoryListView()
-}*/
+#Preview {
+    CategoryListView(categories: [Category(type: .actors, subCategories: [SubCategory(item: "ShahRukh", movies: [Movie(title: "Hlloo", genre: "ycnc", year: "1234", actors: "dsccs", director: "bgfb")])])])
+}

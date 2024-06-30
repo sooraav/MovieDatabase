@@ -18,7 +18,7 @@ struct SubCategoryDisclosureGroup: View {
         }
     }
 }
-/*
+
 #Preview {
-    SubCategoryDisclosureGroup()
-}*/
+    SubCategoryDisclosureGroup(subCategory: SubCategory(item: "Hello", movies: [Movie(title: "shsj", genre: "dcvdc", year: "dvcv", actors: "dvdvv", director: "vdfdv")]))
+}

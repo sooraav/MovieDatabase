@@ -15,13 +15,17 @@ struct MovieListView: View {
             NavigationLink(value: movie) {
                 MovieCellView(title: movie.title,
                               language: movie.language,
-                              imageUrl: movie.poster ?? "",
+                              imageUrl: movie.poster,
                               year: movie.year)
             }
         }
     }
 }
-/*
+
 #Preview {
-    MovieListView()
-}*/
+    MovieListView(movies: [
+        Movie(title: "Movie 1", genre: "Action", year: "2020", actors: "Actor 1", director: "Director 1"),
+        Movie(title: "Movie 2", genre: "Drama", year: "2021", actors: "Actor 2", director: "Director 2"),
+        Movie(title: "Movie 3", genre: "Comedy", year: "2022", actors: "Actor 3", director: "Director 3")
+    ])
+}
