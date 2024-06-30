@@ -18,7 +18,7 @@ struct HomeView: View {
                     CategoryListView(categories: viewModel.categories)
                 } else {
                     List {
-                        MovieListView(movies: viewModel.searchResuls)
+                        MovieListView(movies: viewModel.searchResults)
                     }
                 }
             }

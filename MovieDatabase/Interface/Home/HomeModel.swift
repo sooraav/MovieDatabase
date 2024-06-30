@@ -70,6 +70,38 @@ struct Movie: Codable, Identifiable, Hashable {
     }
 }
 
+extension Movie {
+    init(title: String, genre: String, year: String, actors: String, director: String) {
+            self.init(
+                title: title,
+                year: year,
+                rated: nil,
+                released: "",
+                runtime: "",
+                genre: genre,
+                director: director,
+                writer: "",
+                actors: actors,
+                plot: "",
+                language: "",
+                country: "",
+                awards: nil,
+                poster: nil,
+                ratings: [],
+                metascore: nil,
+                imdbRating: "",
+                imdbVotes: "",
+                imdbID: "",
+                type: "",
+                dvd: nil,
+                boxOffice: nil,
+                production: nil,
+                website: nil,
+                response: ""
+            )
+        }
+}
+
 // Rating model
 struct Rating: Codable, Hashable {
     

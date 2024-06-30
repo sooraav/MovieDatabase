@@ -11,10 +11,10 @@ import SwiftUI
 @Observable class HomeViewModel {
     
     var categories = [Category]()
-    private var movies = [Movie]()
+    var movies = [Movie]()
     var dataFetcher: DataFetchable = DataManager()
     var searchText: String = ""
-    var searchResuls: [Movie] {
+    var searchResults: [Movie] {
         
         if searchText.isEmpty {
             
