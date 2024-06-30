@@ -15,15 +15,9 @@ struct MovieCellView: View {
     var body: some View {
         
         HStack {
-            AsyncImage(url: URL(string: imageUrl)) { image in
-                image
-                    .resizable()
-            } placeholder: {
-                
-                ProgressView()
-            }
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 70)
+            AsyncImageView(imageUrl: imageUrl)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 70)
             
             VStack(alignment: .leading, spacing: 10) {
                 Text(title)

@@ -13,16 +13,11 @@ struct MovieDetailView: View {
     var body: some View {
         ScrollView {
             VStack( spacing: 16) {
-                AsyncImage(url: URL(string: model.movie.poster ?? "")) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .cornerRadius(10)
-                } placeholder: {
-                    ProgressView()
-                }
-                .frame(height: 300)
-                .padding()
+                AsyncImageView(imageUrl: model.movie.poster ?? "")
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 300)
+                    .cornerRadius(10)
+                    .padding()
                 
                 VStack(spacing: 8) {
                     VStack(alignment: .center) {

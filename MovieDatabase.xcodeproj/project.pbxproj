@@ -22,6 +22,7 @@
 		216A2F4E2C311BF200E8D4A7 /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216A2F4D2C311BF100E8D4A7 /* CategoryListView.swift */; };
 		216A2F502C311C5900E8D4A7 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216A2F4F2C311C5900E8D4A7 /* MovieListView.swift */; };
 		216A2F522C311C9F00E8D4A7 /* SubCategoryDisclosureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216A2F512C311C9F00E8D4A7 /* SubCategoryDisclosureGroup.swift */; };
+		216A2F542C311F1900E8D4A7 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216A2F532C311F1900E8D4A7 /* AsyncImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		216A2F4D2C311BF100E8D4A7 /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
 		216A2F4F2C311C5900E8D4A7 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		216A2F512C311C9F00E8D4A7 /* SubCategoryDisclosureGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryDisclosureGroup.swift; sourceTree = "<group>"; };
+		216A2F532C311F1900E8D4A7 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				216A2F442C30719200E8D4A7 /* MovieCellView.swift */,
+				216A2F532C311F1900E8D4A7 /* AsyncImageView.swift */,
 				216A2F4D2C311BF100E8D4A7 /* CategoryListView.swift */,
 				216A2F4F2C311C5900E8D4A7 /* MovieListView.swift */,
 				216A2F512C311C9F00E8D4A7 /* SubCategoryDisclosureGroup.swift */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				216A2F542C311F1900E8D4A7 /* AsyncImageView.swift in Sources */,
 				216A2F3C2C2FFD1800E8D4A7 /* HomeModel.swift in Sources */,
 				216A2F502C311C5900E8D4A7 /* MovieListView.swift in Sources */,
 				216A2F522C311C9F00E8D4A7 /* SubCategoryDisclosureGroup.swift in Sources */,
