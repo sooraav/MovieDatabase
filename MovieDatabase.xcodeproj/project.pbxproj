@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				216A2F252C2FF81900E8D4A7 /* MovieDatabaseApp.swift */,
-				216A2F3E2C302AC500E8D4A7 /* IInfrastructure */,
+				216A2F3E2C302AC500E8D4A7 /* Infrastructure */,
 				216A2F3D2C2FFD6A00E8D4A7 /* Interface */,
 				216A2F332C2FFB7A00E8D4A7 /* Resources */,
 				216A2F2B2C2FF81A00E8D4A7 /* Preview Content */,
@@ -145,12 +145,12 @@
 			path = Interface;
 			sourceTree = "<group>";
 		};
-		216A2F3E2C302AC500E8D4A7 /* IInfrastructure */ = {
+		216A2F3E2C302AC500E8D4A7 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
 				216A2F3F2C302AE300E8D4A7 /* DataManager.swift */,
 			);
-			path = IInfrastructure;
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		216A2F412C30714800E8D4A7 /* ReusableViews */ = {
