@@ -16,7 +16,18 @@ struct HomeView: View {
             VStack {
                 if viewModel.searchText.isEmpty {
                     List(viewModel.categories, id: \.type) { row in
+                        
                         DisclosureGroup {
+                            if row.type == .allMovies, let movies =  row.subCategories.first?.movies {
+                                
+                                ForEach(movies) { movie in
+                                    NavigationLink(value: movie) { MovieCellView(title: movie.title,
+                                                                                 language: movie.language,
+                                                                                 imageUrl: movie.poster ?? "",
+                                                                                 year: movie.year)
+                                    }
+                                }
+                            }
                             ForEach(row.subCategories) { subCategory in
                                 
                                 DisclosureGroup {
