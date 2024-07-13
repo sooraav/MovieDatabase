@@ -25,6 +25,7 @@ struct MovieListSortView: View {
                 }
             }
         }
+        .navigationTitle("All Movies")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Picker("Sort", selection: $pickerSelection) {

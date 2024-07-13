@@ -13,6 +13,7 @@ protocol DataFetchable {
 }
 class DataManager: DataFetchable {
     
+    // Function to parse data to movie array
     private func parseMovies(from jsonData: Data) -> [Movie]? {
         let decoder = JSONDecoder()
         do {
@@ -24,7 +25,7 @@ class DataManager: DataFetchable {
         }
     }
     
-    
+    // Function to getMovieData from the json file
     func getMovieData() async -> [Movie]? {
         
         if let url = Bundle.main.url(forResource: "movies", withExtension: "json"),

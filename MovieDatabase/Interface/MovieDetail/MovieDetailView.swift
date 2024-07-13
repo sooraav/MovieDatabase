@@ -53,7 +53,6 @@ struct MovieDetailView: View {
                         Spacer()
                     }
                     
-                    
                     Divider()
                     Text("Ratings")
                         .font(.headline)
