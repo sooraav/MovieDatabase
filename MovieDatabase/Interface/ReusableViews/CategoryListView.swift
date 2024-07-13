@@ -10,14 +10,17 @@ import SwiftUI
 struct CategoryListView: View {
     var categories: [Category]
     var body: some View {
-            List(categories, id: \.type) { row in
+        List(categories, id: \.type) { row in
+            
+            if row.type == .allMovies, let subCategory = row.subCategories.first {
+                NavigationLink(value: subCategory) {
+                    Text("All Movies")
+                }
+            } else {
                 DisclosureGroup {
-                    if row.type == .allMovies, let movies = row.subCategories.first?.movies {
-                        MovieListView(movies: movies)
-                    } else {
-                        ForEach(row.subCategories) { subCategory in
-                            SubCategoryDisclosureGroup(subCategory: subCategory)
-                        }
+                    
+                    ForEach(row.subCategories) { subCategory in
+                        SubCategoryDisclosureGroup(subCategory: subCategory)
                     }
                 } label: {
                     Text(row.type.rawValue)
@@ -25,6 +28,7 @@ struct CategoryListView: View {
             }
         }
     }
+}
 
 #Preview {
     CategoryListView(categories: [Category(type: .actors, subCategories: [SubCategory(item: "ShahRukh", movies: [Movie(title: "Hlloo", genre: "ycnc", year: "1234", actors: "dsccs", director: "bgfb")])])])

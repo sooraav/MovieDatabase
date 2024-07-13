@@ -33,10 +33,11 @@ import SwiftUI
         getData()
     }
     
+    // function to get the data and parse to the data models for display
     func getData() {
         
-        Task.detached(priority: .high) { [self] in
-            if let movies = dataFetcher.getMovieData() {
+        Task {
+            if let movies = await dataFetcher.getMovieData() {
                 
                 self.movies =  movies
                 
@@ -83,6 +84,7 @@ import SwiftUI
         }
     }
     
+    // function to convertToSubCategories
     private func convertToSubCategories(from dictionary: [String: [Movie]]) -> [SubCategory] {
         return dictionary.map { SubCategory(item: $0.key, movies: $0.value) }
     }

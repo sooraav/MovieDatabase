@@ -9,7 +9,7 @@ import Foundation
 
 protocol DataFetchable {
     
-    func getMovieData() -> [Movie]?
+    func getMovieData() async -> [Movie]?
 }
 class DataManager: DataFetchable {
     
@@ -25,7 +25,7 @@ class DataManager: DataFetchable {
     }
     
     
-    func getMovieData() -> [Movie]? {
+    func getMovieData() async -> [Movie]? {
         
         if let url = Bundle.main.url(forResource: "movies", withExtension: "json"),
            let data = try? Data(contentsOf: url) {

@@ -25,6 +25,7 @@
 		216A2F542C311F1900E8D4A7 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216A2F532C311F1900E8D4A7 /* AsyncImageView.swift */; };
 		216A2F5F2C31231000E8D4A7 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216A2F5E2C31231000E8D4A7 /* HomeViewModelTests.swift */; };
 		216A2F682C3125E100E8D4A7 /* MockDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216A2F672C3125E100E8D4A7 /* MockDataFetcher.swift */; };
+		21E81D832C42BDE2005CF2BC /* MovieListSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E81D822C42BDE1005CF2BC /* MovieListSortView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		216A2F5C2C31231000E8D4A7 /* MovieDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		216A2F5E2C31231000E8D4A7 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		216A2F672C3125E100E8D4A7 /* MockDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataFetcher.swift; sourceTree = "<group>"; };
+		21E81D822C42BDE1005CF2BC /* MovieListSortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListSortView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				216A2F4D2C311BF100E8D4A7 /* CategoryListView.swift */,
 				216A2F4F2C311C5900E8D4A7 /* MovieListView.swift */,
 				216A2F512C311C9F00E8D4A7 /* SubCategoryDisclosureGroup.swift */,
+				21E81D822C42BDE1005CF2BC /* MovieListSortView.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				216A2F542C311F1900E8D4A7 /* AsyncImageView.swift in Sources */,
+				21E81D832C42BDE2005CF2BC /* MovieListSortView.swift in Sources */,
 				216A2F3C2C2FFD1800E8D4A7 /* HomeModel.swift in Sources */,
 				216A2F502C311C5900E8D4A7 /* MovieListView.swift in Sources */,
 				216A2F522C311C9F00E8D4A7 /* SubCategoryDisclosureGroup.swift in Sources */,

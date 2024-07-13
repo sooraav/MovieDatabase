@@ -26,6 +26,10 @@ struct HomeView: View {
                 
                 MovieDetailView(model: MovieDetailViewModel(movie: movie))
             }
+            .navigationDestination(for: SubCategory.self) { item in
+                
+                    MovieListSortView(movies: item.movies)
+            }
             .navigationTitle("Movies")
             .searchable(text: $viewModel.searchText)
         }

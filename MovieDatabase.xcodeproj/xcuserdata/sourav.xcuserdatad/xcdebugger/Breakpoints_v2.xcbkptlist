@@ -14,58 +14,13 @@
             filePath = "MovieDatabase/Interface/Home/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "getData()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "CBBE665D-AE90-460D-8E32-5B2FFE841505 - 52803ef59181ea7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MovieDatabase.HomeViewModel.getData() -&gt; ()"
-                  moduleName = "MovieDatabase"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sourav/Documents/Xcode/MovieDatabase/MovieDatabase/Interface/Home/HomeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "CBBE665D-AE90-460D-8E32-5B2FFE841505 - 52803ef59181ea7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MovieDatabase.HomeViewModel.getData() -&gt; ()"
-                  moduleName = "MovieDatabase"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sourav/Documents/Xcode/MovieDatabase/MovieDatabase/Interface/Home/HomeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "272">
-               </Location>
-               <Location
-                  uuid = "CBBE665D-AE90-460D-8E32-5B2FFE841505 - 52803ef59181ea7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MovieDatabase.HomeViewModel.getData() -&gt; ()"
-                  moduleName = "MovieDatabase"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sourav/Documents/Xcode/MovieDatabase/MovieDatabase/Interface/Home/HomeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "324">
-               </Location>
-               <Location
-                  uuid = "CBBE665D-AE90-460D-8E32-5B2FFE841505 - 82b668f25e9c109f"
+                  uuid = "CBBE665D-AE90-460D-8E32-5B2FFE841505 - 82b668f25e9c1197"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -75,9 +30,24 @@
                   urlString = "file:///Users/sourav/Documents/Xcode/MovieDatabase/MovieDatabase/Interface/Home/HomeViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "428">
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "708">
+               </Location>
+               <Location
+                  uuid = "CBBE665D-AE90-460D-8E32-5B2FFE841505 - 82b668f25e9c1197"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MovieDatabase.HomeViewModel.getData() -&gt; ()"
+                  moduleName = "MovieDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sourav/Documents/Xcode/MovieDatabase/MovieDatabase/Interface/Home/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1784">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -92,57 +62,41 @@
             filePath = "MovieDatabase/Interface/Home/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "getData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3A2933C4-204B-43CB-B354-B1A7FFA82049 - 52803ef59181ef13"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MovieDatabase.HomeViewModel.getData() -&gt; ()"
-                  moduleName = "MovieDatabase"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sourav/Documents/Xcode/MovieDatabase/MovieDatabase/Interface/Home/HomeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "6344">
-               </Location>
-               <Location
-                  uuid = "3A2933C4-204B-43CB-B354-B1A7FFA82049 - 82b668f25e9c1533"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MovieDatabase.HomeViewModel.getData() -&gt; ()"
-                  moduleName = "MovieDatabase"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sourav/Documents/Xcode/MovieDatabase/MovieDatabase/Interface/Home/HomeViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "844">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FB9DFC10-56EA-4111-B2B0-BD538D28ED65"
+            uuid = "3B82682D-E96F-498E-8A64-FED8F5C164C8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MovieDatabase/Interface/Home/HomeViewModel.swift"
+            filePath = "MovieDatabase/Infrastructure/DataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "searchResults"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "DataFetchable"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C7A6395-3150-4F69-8C48-A0F920338529"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDatabase/Interface/Home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>

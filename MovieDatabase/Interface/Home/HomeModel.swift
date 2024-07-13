@@ -119,7 +119,7 @@ struct Category {
     var subCategories: [SubCategory]
 }
 
-struct SubCategory: Identifiable {
+struct SubCategory: Identifiable, Hashable {
     var id = UUID()
     var item: String
     var movies: [Movie]
